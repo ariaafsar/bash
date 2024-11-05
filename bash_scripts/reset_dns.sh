@@ -1,6 +1,6 @@
 #!bin/bash
 
-sudo echo > "# This is /run/systemd/resolve/stub-resolv.conf managed by man:systemd-resolved(8).
+sudo echo "# This is /run/systemd/resolve/stub-resolv.conf managed by man:systemd-resolved(8).
 # Do not edit.
 #
 # This file might be symlinked as /etc/resolv.conf. If you're looking at
@@ -10,7 +10,7 @@ sudo echo > "# This is /run/systemd/resolve/stub-resolv.conf managed by man:syst
 # internal DNS stub resolver of systemd-resolved. This file lists all
 # configured search domains.
 #
-# Run "resolvectl status" to see details about the uplink DNS servers
+# Run resolvectl status to see details about the uplink DNS servers
 # currently in use.
 #
 # Third party programs should typically not access this file directly, but only
@@ -23,6 +23,6 @@ sudo echo > "# This is /run/systemd/resolve/stub-resolv.conf managed by man:syst
 nameserver 127.0.0.53
 options edns0 trust-ad
 search .
-"
+" > /etc/resolv.conf
 
 
