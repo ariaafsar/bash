@@ -40,6 +40,12 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
+sudo echo "installing neofetch"
+sudo apt install neofetch -y
+
+sudo echo "installing net-tools"
+sudo apt install net-tools
+
 #sudo echo "installing tor browser"
 
 sudo apt upgrade
