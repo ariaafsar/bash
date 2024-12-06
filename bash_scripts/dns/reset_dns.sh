@@ -25,4 +25,4 @@ options edns0 trust-ad
 search .
 " > /etc/resolv.conf
 
-
+cat /etc/resolv.conf
