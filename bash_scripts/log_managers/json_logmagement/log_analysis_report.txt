@@ -1,0 +1,7 @@
+Log Analysis Report
+--------------------
+INFO count : 25
+WARN count : 25
+ERROR count: 25
+FATAL count: 25
+DEBUG count: 25
